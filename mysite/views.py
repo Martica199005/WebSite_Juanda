@@ -2,6 +2,7 @@
 from django.shortcuts import render
 from bs4 import BeautifulSoup
 
+
 def home(request):
   search=request.POST.get('search')
   #print(search)
@@ -12,3 +13,6 @@ def home(request):
 
 def coaching(request):
   return render(request , 'main/coaching.html')
+
+def contact(request):
+  return render(request , 'main/contact.html')
