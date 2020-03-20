@@ -19,19 +19,55 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="sass.html">Home</a></li>
         <li><a href="badges.html">Coaching Programmes</a></li>
-        <li><a href="collapsible.html">Contact me</a></li>
+        <li><a href="collapsible.html">Contact me</a>
+        </li>
         </ul>
       </div>
    </nav>
-
+  <div class="container">
     <h1 style="text-align: center">Write something</h1>
     <div class="row">
         <div class="col s4">
             <!-- Promo Content 1 goes here -->
             <div class="center">
-                <i class="large material-icons" style="color: #EE6E73">Write something</i>
-                <p>Write something</p>
-                <p class="light center">Write something</p>
+                <!--i class="large material-icons" style="color: #EE6E73">call</i-->
+                <p>Write something1</p>
+                <p class="light center">Write something2</p>
             </div>
+        </div>
+    </div>
+  
+  {% block content %}
+  <div class="row">
+    <div class="col s5 m5">
+      <div class="card">
+        <div class="card-image">
+          <img src="#">
+          <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <h2>Home</h2>
+  <form action method="post">
+  {% csrf_token %}
+  <input type="text" name="search" placeholder="bho">
+  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+  </form>
+  <h2>{{search}}</h2>
+
+  {% endblock content %}
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>

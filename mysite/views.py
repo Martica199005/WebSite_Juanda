@@ -1,9 +1,14 @@
 #from django.http import HttpResponse
 from django.shortcuts import render
-
-
-#def index(request):
- #   return HttpResponse("Hello, world.")
+from bs4 import BeautifulSoup
 
 def home(request):
-  return render(request , 'base.html')
+  search=request.POST.get('search')
+  #print(search)
+  stuff_for_frontend ={
+    'search':search,
+  }
+  return render(request , 'base.html', stuff_for_frontend)
+
+def coaching(request):
+  return render(request , 'main/coaching.html')
