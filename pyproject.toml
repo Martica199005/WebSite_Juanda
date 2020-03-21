@@ -8,6 +8,7 @@ authors = ["Your Name <you@example.com>"]
 python = "^3.7"
 Django = "^3.0"
 bs4 = "^0.0.1"
+twilio = "^6.37"
 
 [tool.poetry.dev-dependencies]
 

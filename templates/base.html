@@ -10,63 +10,37 @@
 
   
 
-    <title>Juan David webpage</title>
+    <title>JD webpage</title>
   </head>
   <body>
     <nav>
       <div class="container nav-wrapper">
-        <a href="/" class="brand-logo">Juan David</a>
+        <a href="/" class="brand-logo">Name</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href=".">Home</a></li>
         <li><a href="coaching">Coaching Programmes</a></li>
         <li><a href="contact">Contact me</a>
         </li>
+        <!--li><a href="info">TEST</a>
+        </li-->
         </ul>
       </div>
    </nav>
   <div class="container">
     <h1 style="text-align: center">Write something</h1>
     <div class="row">
-        <div class="col s4">
+        <div class="col s12 m7">
             <!-- Promo Content 1 goes here -->
             <div class="center">
                 <!--i class="large material-icons" style="color: #EE6E73">call</i-->
-                <p>Write something1</p>
-                <p class="light center">Write something2</p>
+                <!--p>Write something1</p>
+                <p class="light center">Write something2</p-->
             </div>
         </div>
     </div>
   
   {% block content %}
-  <div class="row">
-    <div class="col s m7">
-      <div class="card">
-        <div class="card-image">
-          <img src="#">
-          <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <form action method="post">
-  {% csrf_token %}
-  <input type="text" name="search" placeholder="Your Name">
-  <input type="text" name="search" placeholder="E-Mail Address">
-  <input type="text" name="search" placeholder="Phone Number">
-  
-  
-  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
-  </form>
-  <h2>{{search}}</h2>
+
  {% endblock content %}
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

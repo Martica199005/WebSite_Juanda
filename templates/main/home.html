@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content%}
-<h2>CONTACT ME</h2>
-<form action={% url "contact" %} method="post">
+<img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4">
+<form action method="post">
 {% csrf_token %}
   <input type="text" name="name" placeholder="Your Name">
   <input type="text" name="email" placeholder="E-mail">
@@ -12,5 +12,4 @@
   </button>
 </form>
 </div>
-
-{% endblock content%}
+{% endblock content %}
