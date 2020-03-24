@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Search
+from .models import NewPerson
 
-admin.site.register(Search)
+admin.site.register(NewPerson)

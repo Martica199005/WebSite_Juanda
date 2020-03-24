@@ -1,15 +1,81 @@
 {% extends 'base.html' %}
 
 {% block content%}
-<img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4">
-<form action method="post">
-{% csrf_token %}
-  <input type="text" name="name" placeholder="Your Name">
-  <input type="text" name="email" placeholder="E-mail">
-  <input type="text" name="phone" placeholder="Phone">
-<button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
-</form>
+<div class="container">
+  <div class="row">
+    <div class="col 16">
+    <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4">
+    </div>
+  </div>
 </div>
+<!--div class="container">
+  <form action method="post">
+  {% csrf_token %}
+  <div class="row">
+     <div class="input-field col 16">
+     <i class="material-icons prefix">person</i>
+     <input type="text" name="name">
+     <label for="name">Your Name</label>
+     </div>
+  </div>
+  <div class="row">
+    <div class="input-field col 16">
+    <i class="material-icons prefix">mail</i>
+    <input type="email" id="email" name="email" class="validate">
+    <label for="email">E-mail</label>
+    <span class="helper-text" data-error="Invalid e-mail" data-success="right">Type your e-mail correctly</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col 16">
+    <i class="material-icons prefix">call</i>
+    <input type="number" name="phone" class="validate">
+  <label for="phone">Phone</label>
+  <span class="helper-text" data-error="Invalid phone number" data-success="right">Put your phone number</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input input-field col 16">
+    <i class="material-icons prefix">mode_edit</i>
+    <textarea id="textarea1" name="msg" class="materialize-textarea"></textarea>
+    <!--input type="text" name="msg"-->
+    <!--label for="textarea1">Send me a message</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input input-field col 16">
+    <button class="btn waves-effect waves-light blue" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+    </button>
+    </div>
+  </div>
+  </form>
+</div-->
+<!--div class="container">
+<footer style="position:fixed;bottom:0;left:0;width:100%;" class="page-footer blue"">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+</div-->
 {% endblock content %}

@@ -51,52 +51,16 @@
             </div>
         </div>
     </div>
-<!--div class="container">
+    <div class="container">
 <footer style="position:fixed;bottom:0;left:0;width:100%;" class="page-footer blue"">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Contact me</h5>
-                <form action={% url "contact" %} method="post">{% csrf_token %}
-                  <div class='row'>
-                    <div class="input-field col l6 s12">
-                     <i class="material-icons prefix">person</i>
-                    <input type="text"  name="name" placeholder="Your name">
-                    </div>
-                    <div class="input-field col l4 offset-l2 s12">
-                     <i class="material-icons prefix">mode_edit</i>
-                    <textarea id="textarea1" name="msg" class="materialize-textarea" placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                 <div class='row'>
-                    <div class="input-field col l6 s12">
-                     <i class="material-icons prefix">mail</i>
-                    <input type="text"  name="email" placeholder="E-mail">
-                    </div>
-                    <div class="input-field col l4 offset-l2 s12">
-                    <button class="btn waves-effect waves-light blue" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-                     </button>
-                    </div>
-                  </div>
-                  <div class='row'>
-                    <div class="input-field col l6 s12">
-                     <i class="material-icons prefix">phone</i>
-                    <input type="text"  name="phone" placeholder="Phone">
-                    </div>
-                  </div>
-                </form> 
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
+          <!--div class="footer-copyright"-->
             <div class="container">
             © 2014 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
-          </div>
+          <!--/div-->
         </footer>
-</div-->
+</div>
   {% block content %}
 
  {% endblock content %}
